@@ -9,4 +9,4 @@ function Project() {
     )
 }
 
-export default Project
+export { Project };

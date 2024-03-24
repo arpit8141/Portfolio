@@ -1,18 +1,18 @@
 import './App.css';
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from '@chakra-ui/react'
-import Profile from './Pages/Profile';
-import Project from './Pages/Project';
-import About from './Pages/About';
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from '@chakra-ui/react';
+import { Profile, Project, About, Contact } from './Pages/index';
+
 
 function App() {
   return (
     <div className="App">
-      <Box m={5}>
+      <Box margin='2rem 15rem' >
         <Tabs align='center'>
-          <TabList>
+          <TabList >
             <Tab>About</Tab>
             <Tab>Profile</Tab>
-            <Tab>Project</Tab>
+            <Tab>Projects</Tab>
+            <Tab>Contact</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
@@ -24,10 +24,13 @@ function App() {
             <TabPanel>
               <Project />
             </TabPanel>
+            <TabPanel>
+              <Contact />
+            </TabPanel>
           </TabPanels>
         </Tabs>
       </Box>
-    </div>
+    </div >
   );
 }
 
