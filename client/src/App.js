@@ -6,8 +6,8 @@ import { Profile, Project, About, Contact } from './Pages/index';
 function App() {
   return (
     <div className="App">
-      <Box margin='2rem 15rem' >
-        <Tabs align='center'>
+      <Box margin='2rem 20rem' height='40rem'>
+        <Tabs align='center' defaultIndex={1}>
           <TabList >
             <Tab>About</Tab>
             <Tab>Profile</Tab>
@@ -15,16 +15,16 @@ function App() {
             <Tab>Contact</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel>
+            <TabPanel className='Card-Additional'>
               <About />
-            </TabPanel>
-            <TabPanel>
+            </TabPanel >
+            <TabPanel className='Card-Additional'>
               <Profile />
             </TabPanel>
-            <TabPanel>
+            <TabPanel className='Card-Additional'>
               <Project />
             </TabPanel>
-            <TabPanel>
+            <TabPanel className='Card-Additional'>
               <Contact />
             </TabPanel>
           </TabPanels>

@@ -6,11 +6,12 @@ import { Box, Card, Stack, CardFooter, CardBody, Heading, Text } from '@chakra-u
 
 function Profile() {
     return (
-        <Box>
+        <Box >
             <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
                 variant='outline'
+            // backgroundColor='#99775C'
             >
                 <Image
                     objectFit='cover'
@@ -19,10 +20,10 @@ function Profile() {
                     alt='Profile Image'
                 />
                 <Stack>
-                    <CardBody >
-                        <Heading size='md' textAlign='left'>Arpit Vaghela</Heading>
+                    <CardBody textAlign='left'>
+                        <Heading size='md' >Arpit Vaghela</Heading>
                         <Text py='2'>
-                            "The only way to do great work is to Love what you do !"
+                            I seek challenging opportunities where I can fully use my skills for the success of the organization.
                         </Text>
                     </CardBody>
                     <CardFooter>

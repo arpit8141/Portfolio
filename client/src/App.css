@@ -1,1 +1,9 @@
-.App {}
+.App {
+    padding: 1rem;
+    background-color: #EAE7DD;
+}
+
+.Card-Additional {
+    height: 30rem;
+    width: 50rem;
+}
